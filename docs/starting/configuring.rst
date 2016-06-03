@@ -22,8 +22,10 @@ The settings are:
     **Required**. This is the name of the model that implements
     a Flag. It *should* inherit from ``waffle.models.BaseFlag``,
     but you can also provide a custom model for it.
-    **No Default**.
     If unset it will raise an ``AttributeError`` exception.
+    **Default**.
+    You can use ``waffle.models.Flag`` which is the simple
+    default ``Flag`` model provided by ``django-waffle``.
 
 ``WAFFLE['UNIQUE_FLAG_NAME']``
     Should the ``name` field in ``waffle.models.BaseFlag`` be

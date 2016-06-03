@@ -82,5 +82,5 @@ WAFFLE = {
     'SAMPLE_DEFAULT' : False,
     'OVERRIDE' : False,
     'CACHE_PREFIX' : 'test:',
-    'FLAG_CLASS': 'test_app.models.Flag',
+    'FLAG_CLASS': 'waffle.Flag',
 }

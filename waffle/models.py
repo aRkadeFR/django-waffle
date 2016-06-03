@@ -272,6 +272,15 @@ class BaseFlag(BaseModel):
         return False
 
 
+class Flag(BaseFlag):
+    """This is the default implementation of the Flag model.
+
+    As the documentation states, you can override with your custom model
+    with the WAFFLE['CLASS_MODEL'] """
+    class Meta:
+        abstract = False
+
+
 class Switch(BaseModel):
     """A feature switch.
 
